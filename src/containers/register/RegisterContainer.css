@@ -1,0 +1,34 @@
+.popup-register{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner-register{
+    position: relative;
+    padding: 55px;
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.popup-form-register{
+    padding: 15px;
+}
+
+.close-register{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}

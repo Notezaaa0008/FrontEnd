@@ -1,0 +1,18 @@
+.track-container{
+    box-sizing: none;
+}
+
+.track-search-box{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 50px 230px 100px 230px;
+    background-color: #9CACFF;
+}
+
+.track-list{
+    padding: 30px 150px 30px 150px;
+}
+
+.track-list-inner{
+    margin: 20px 0px 20px 0px;
+}

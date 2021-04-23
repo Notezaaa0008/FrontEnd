@@ -1,0 +1,25 @@
+.update-status-header{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.update-status-select{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.update-status-button{
+    margin: 20px;
+}
+
+.update-status-button-update{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}

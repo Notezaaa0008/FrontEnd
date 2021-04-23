@@ -1,0 +1,48 @@
+.pickup-date-box{
+    margin: 40px 10px 10px 10px;
+}
+
+.create-order-by-user-input-1{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    /* width: 200px; */
+}
+
+.create-order-by-user-input-2{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.create-order-by-user-input-3{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.create-order-by-user-input-box1{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 340px;
+}
+
+.create-order-by-user-input-box2{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+}
+
+.create-order-by-user-button{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}

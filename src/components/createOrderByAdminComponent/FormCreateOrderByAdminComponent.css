@@ -1,0 +1,42 @@
+.create-order-admin{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 20px 150px;
+}
+
+.create-order-admin-field{
+    padding: 0px 50px 50px 50px;
+    border-radius: 10px;
+}
+
+.create-order-admin-box{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.create-order-admin-box-input{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 5px 10px;
+}
+
+.create-order-admin-input{
+    margin: 10px 0px;
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+}
+
+.create-order-admin-button-box{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.create-order-admin-button{
+    margin: 20px 50px 0px 50px;
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}

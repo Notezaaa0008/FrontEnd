@@ -1,0 +1,53 @@
+.register-input-1, .register-input-2, .register-input-3, .register-input-5,
+.register-input-6, .register-input-7{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.register-input-4{
+    margin: 15px;
+}
+
+.register-input-8{
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.register-input-9{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.register-input-box1{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 200px;
+}
+
+.register-input-box2{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 415px;
+    height: 70px;
+}
+
+.register-button{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.register-error{
+    margin: 0px 30px;
+}

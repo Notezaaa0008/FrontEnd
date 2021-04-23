@@ -1,0 +1,65 @@
+.admin-page-container{
+    padding: 30px 150px 30px 150px;
+}
+
+.admin-page-head{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0px 15px 20px 15px;
+}
+
+.admin-page-button-box{
+    display: flex;
+    align-items: center;
+}
+
+.admin-page-button-create{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.admin-page-input{
+    width: 900px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.admin-page-link{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.admin-page-link-box{
+    margin: 0px 20px 0px 20px;
+}
+
+.admin-page-link-a{
+    text-decoration: none;
+    color: black;
+}
+
+.admin-page-list{
+    margin: 20px 0px 20px 0px;
+}
+
+.admin-page-list-inner{
+    margin: 0px 20px 0px 20px;
+}
+
+.admin-page{
+    display: flex;
+    flex-flow: row column;
+    justify-content: center;
+}
+
+.admin-page-a{
+    text-decoration: none;
+    color: black;
+    margin: 5px 5px;
+}

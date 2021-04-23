@@ -1,0 +1,11 @@
+.button-component {
+    margin: 0px 10px;
+}
+
+.button-signup, .button-login{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}

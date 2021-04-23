@@ -1,0 +1,112 @@
+.list-order-component{
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.list-order-head-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.list-order-track, .list-order-date, .list-order-place-box{
+    margin: 10px 20px 10px 20px;
+}
+
+.list-order-date{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.list-order-pickup-date, .list-order-due-date{
+    margin: 0px 15px 0px 15px;
+}
+
+.list-order-place-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+.list-order-place-from{
+    margin: 0px 10px 0px 0px;
+}
+
+.list-order-place-to{
+    margin: 0px 0px 0px 10px;
+}
+
+.list-order-list-box{
+    border: 1px solid lightgrey;
+    background-color: lightgrey;
+    margin: 20px;
+}
+
+.list-order-inner-list{
+    margin: 30px 50px 30px 50px;
+    padding-bottom: 20px;
+    background-color: linen;
+    border-radius: 10px;
+}
+
+.list-order-head-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.list-order-status, .list-order-status-button{
+    margin: 20px;
+    padding: 0px 30px 0px 30px;
+}
+
+.list-order-status-box{
+    border-radius: 10px;
+    margin: 0px 20px 0px 20px;
+    background-color: lightgrey;
+}
+
+.list-order-list-status{
+    margin: 0px 20px 0px 20px;
+    padding: 20px 10px 20px 10px;
+}
+
+.list-order-button-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.list-order-button-box{
+    margin: 0px 50px 30px 50px;
+}
+
+.button-cancel, .button-update, .button-delete{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.button-cancel-disabled{
+    padding: 5px;
+    background-color: gray;
+    color:black;
+    width: 100px;
+    border-radius: 20px;
+}
+
+.list-order-list-status-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.list-order-list-status-li{
+    margin: 0px 20px 0px 20px;
+}
+
+.list-order-list-li-box{
+    padding: 10px 0px;
+}

@@ -1,0 +1,56 @@
+.edit-profile-input-1, .edit-profile-input-2, .edit-profile-input-3, .edit-profile-input-5,
+.edit-profile-input-6, .edit-profile-input-7{
+    margin: 10px;
+    height: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.edit-profile-input-4{
+    margin: 10px;
+}
+
+.edit-profile-input-8{
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.edit-profile-input-9{
+    margin: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.edit-profile-input-box1{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 200px;
+}
+
+.edit-profile-input-box2{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 415px;
+    height: 70px;
+}
+
+.edit-profile-input-box3{
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: 415px;
+}
+
+.edit-profile-button{
+    padding: 5px;
+    background-color: #ff5005;
+    color: white;
+    width: 100px;
+    border-radius: 20px;
+}
