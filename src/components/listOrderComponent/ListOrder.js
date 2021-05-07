@@ -22,11 +22,7 @@ const ListOrder = ({ openButton, item }) => {
 
     useEffect(() => {
         if (role === "CUSTOMER") {
-            console.log("test111")
-            const date = new Date();
-            const currentDate = `${("0" + (date.getDate() + 1)).slice(-2)}/${("0" + (date.getMonth() + 1)).slice(-2)}/${date.getFullYear()}`;
-            const picUp = `${("0" + (new Date(item.pickUpDate).getDate())).slice(-2)}/${("0" + (new Date(item.pickUpDate).getMonth() + 1)).slice(-2)}/${("0" + (new Date(item.pickUpDate).getFullYear())).slice(-2)}`;
-            if (currentDate >= picUp || item.status[0].status === "CANCEL") {
+            if (new Date() >= new Date(item.pickUpDate) || item.status[0].status === "CANCEL" || item.status[0].status === 'DELIVERY SUCCESSFULLY') {
                 setDisableButtonCancel(false);
             } else {
                 setDisableButtonCancel(true);

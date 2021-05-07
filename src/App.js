@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { useSelector } from "react-redux";
 import NavigationBarContainer from './containers/navigationBar/NavigationBarContainer';
 import FooterContainer from './containers/footer/FooterContainer';
 import HomepageContainer from './containers/homepage/homepageContainer';
@@ -9,21 +10,52 @@ import AdminPageContainer from './containers/adminPage/AdminPageContainer';
 import ProfileContainer from './containers/profile/ProfileContainer';
 import AboutUsContainer from './containers/aboutUs/AboutUsContainer';
 
+const privateRoutes = [
+  {
+    path: '/',
+    component: HomepageContainer
+  },
+  {
+    path: '/profile',
+    component: ProfileContainer
+  },
+  {
+    path: '/admin',
+    component: AdminPageContainer
+  },
+  {
+    path: '/create-order-admin',
+    component: CreateOrderByAdminContainer
+  }
+];
+
+const publicRoutes = [
+  {
+    path: '/',
+    component: HomepageContainer
+  },
+  {
+    path: '/about',
+    component: AboutUsContainer
+  },
+  {
+    path: '/tracking',
+    component: TrackingContainer
+  }
+];
+
 
 function App() {
+  const isAuthenticated = useSelector((state) => state.authenticated.isAuthenticated);
+
   return (
     <BrowserRouter>
       <div >
         <NavigationBarContainer />
         <div>
           <Switch>
-            <Route exact path='/tracking' component={TrackingContainer} />
-            <Route exact path='/create-order-admin' component={CreateOrderByAdminContainer} />
-            <Route exact path='/admin' component={AdminPageContainer} />
-            <Route exact path='/profile' component={ProfileContainer} />
-            <Route exact path='/about' component={AboutUsContainer} />
-
-            <Route exact path='/' component={HomepageContainer} />
+            {isAuthenticated && privateRoutes.map((el, index) => <Route key={index} exact path={el.path} component={el.component} />)}
+            {!isAuthenticated && publicRoutes.map((el, index) => <Route key={index} exact path={el.path} component={el.component} />)}
           </Switch>
         </div>
         <FooterContainer />

@@ -13,7 +13,7 @@ const ProfileContainer = () => {
     const [cancel, setCancel] = useState(false);
     const [userOrderList, setUserOrderList] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [orderPerPage, setOrderPerPage] = useState(2);
+    const [orderPerPage, setOrderPerPage] = useState(5);
     const [pageNumber, setPageNumber] = useState([]);
 
     useEffect(() => {
@@ -53,7 +53,7 @@ const ProfileContainer = () => {
                 for (let i = 1; i <= Math.ceil(res.data.orderTmp.length / orderPerPage); i++) {
                     pageNumberTmp.push(i);
                 };
-                console.log("list", pageNumberTmp);
+                // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
             }
         } catch (err) { }
@@ -74,7 +74,7 @@ const ProfileContainer = () => {
                 for (let i = 1; i <= Math.ceil(res.data.orderTmp.length / orderPerPage); i++) {
                     pageNumberTmp.push(i);
                 };
-                console.log("list", pageNumberTmp);
+                // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
             }
         } catch (err) { }
@@ -95,7 +95,7 @@ const ProfileContainer = () => {
                 for (let i = 1; i <= Math.ceil(res.data.orderTmp.length / orderPerPage); i++) {
                     pageNumberTmp.push(i);
                 };
-                console.log("list", pageNumberTmp);
+                // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
             }
         } catch (err) { }
@@ -116,7 +116,7 @@ const ProfileContainer = () => {
                 for (let i = 1; i <= Math.ceil(res.data.orderTmp.length / orderPerPage); i++) {
                     pageNumberTmp.push(i);
                 };
-                console.log("list", pageNumberTmp);
+                // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
             }
         } catch (err) { }

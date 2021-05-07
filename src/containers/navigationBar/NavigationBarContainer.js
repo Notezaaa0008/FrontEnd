@@ -22,7 +22,6 @@ const NavigationBarContainer = () => {
                 {!isAuthenticated && <Button />}
                 {isAuthenticated && <LoginSuccess />}
             </div>
-
         </div>
     );
 }

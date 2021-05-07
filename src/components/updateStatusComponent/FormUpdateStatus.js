@@ -44,7 +44,7 @@ const FormUpdateStatus = ({ item }) => {
                 <div className="update-status-select">
                     <label htmlFor="">Status:</label>&nbsp;&nbsp;
                     <select name="Status" id="" onChange={handleChange}>
-                        <option name="SHIPMENT DROP OFF" value="SHIPMENT DROP OFF" selected> SHIPMENT DROP OFF</option>
+                        <option name="SHIPMENT DROP OFF" value="" selected> SELECT STATUS</option>
                         <option name="SHIPMENT PICK UP" value="SHIPMENT PICK UP" > SHIPMENT PICK UP</option>
                         <option name="ARRIVED AT TRANSIT STATION" value="ARRIVED AT TRANSIT STATION" > ARRIVED AT TRANSIT STATION</option>
                         <option name="ARRIVED AT DESTINATION STATION" value="ARRIVED AT DESTINATION STATION" > ARRIVED AT DESTINATION STATION</option>

@@ -22,7 +22,7 @@ const Carousel = () => {
     };
     useEffect(() => {
 
-        const interval = setInterval(() => timeSlide(), 5000);
+        const interval = setInterval(() => timeSlide(), 3000);
         return () => {
             clearInterval(interval)
         }
