@@ -30,7 +30,6 @@ const ListOrder = ({ openButton, item }) => {
         };
 
         if (role === "ADMIN") {
-            console.log(item.status[0].status)
             if (item.status[0].status === 'DELIVERY SUCCESSFULLY' || item.status[0].status === 'CANCEL') {
                 setDisableButtonUpdate(false);
             } else {

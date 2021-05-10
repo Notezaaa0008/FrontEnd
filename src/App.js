@@ -26,7 +26,15 @@ const privateRoutes = [
   {
     path: '/create-order-admin',
     component: CreateOrderByAdminContainer
-  }
+  },
+  {
+    path: '/tracking',
+    component: TrackingContainer
+  },
+  {
+    path: '/about',
+    component: AboutUsContainer
+  },
 ];
 
 const publicRoutes = [

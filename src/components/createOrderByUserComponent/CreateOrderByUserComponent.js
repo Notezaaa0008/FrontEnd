@@ -66,7 +66,9 @@ const CreateOrderByUserComponent = () => {
         <form action="" onSubmit={handlerSubmit}>
             <div className="pickup-date-box">
                 <label>Pickup date:</label>&nbsp;&nbsp;
-                    <input type="date" name="pickUpDate" value={createOrderByUser.pickUpDate} onChange={handleInputChange} />
+                    <input type="date"
+                    min={`${new Date().getFullYear()}-${("0" + (new Date().getMonth() + 1)).slice(-2)}-${("0" + (new Date().getDate() + 1)).slice(-2)}`}
+                    name="pickUpDate" value={createOrderByUser.pickUpDate} onChange={handleInputChange} />
             </div>
             {error.pickUpDate && <span className="help-block" style={{ color: "red" }}>{error.pickUpDate}</span>}
             <div><hr /></div>
