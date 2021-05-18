@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import { useSelector } from "react-redux";
 import NavigationBarContainer from './containers/navigationBar/NavigationBarContainer';
 import FooterContainer from './containers/footer/FooterContainer';
