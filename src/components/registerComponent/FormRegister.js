@@ -11,7 +11,7 @@ const FormRegister = () => {
     const [input, setInput] = useState({
         username: '', firstName: '', lastName: '', email: '', password: '',
         confirmPassword: '', address: '', district: '', province: '',
-        country: '', postalCode: '', phonNumber: '', BackupPhoneNumber: ''
+        country: '', postalCode: '', phoneNumber: '', BackupPhoneNumber: ''
     });
     const [file, setFile] = useState(null);
     const [error, setError] = useState({});
@@ -38,15 +38,13 @@ const FormRegister = () => {
         if (!input.province) newError.province = 'Province is required.';
         if (!input.country) newError.country = 'Country is required.';
         if (!input.postalCode) newError.postalCode = 'Postal code is required.';
-        if (!input.phonNumber) newError.phonNumber = 'Phon number is required.';
+        if (!input.phoneNumber) newError.phoneNumber = 'Phone number is required.';
         if (!input.email) newError.email = 'email is required.';
         if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(input.email)) newError.email = 'Invalid email address.';
-
         setError(newError);
     }
 
     const handleFileChange = (e) => {
-        // console.log(e.target);
         setFile(e.target.files[0]);
     }
 
@@ -67,7 +65,7 @@ const FormRegister = () => {
             formData.append('provinceUser', input.province);
             formData.append('countryUser', input.country);
             formData.append('postalCodeUser', input.postalCode);
-            formData.append('phone1User', input.phonNumber);
+            formData.append('phone1User', input.phoneNumber);
             formData.append('phone2User', input.BackupPhoneNumber);
             formData.append('role', 'CUSTOMER');
             const res = await axios.post('/users/register', formData);
@@ -92,7 +90,7 @@ const FormRegister = () => {
         setInput({
             username: '', firstName: '', lastName: '', email: '', password: '',
             confirmPassword: '', address: '', district: '', province: '',
-            country: '', postalCode: '', phonNumber: '', BackupPhoneNumber: ''
+            country: '', postalCode: '', phoneNumber: '', BackupPhoneNumber: ''
         })
         setError({})
     }
@@ -147,11 +145,11 @@ const FormRegister = () => {
             {error.postalCode && <span className="register-error" style={{ color: "red" }}>{error.postalCode}</span>}
             <div className="register-input-7">
                 <input className="register-input-box1" name="phonNumber" type="text" placeholder="Phone number"
-                    value={input.phonNumber} onChange={handleInputChange} />
+                    value={input.phoneNumber} onChange={handleInputChange} />
                 <input className="register-input-box1" name="BackupPhoneNumber" type="text" placeholder="Backup phone number"
                     value={input.BackupPhoneNumber} onChange={handleInputChange} />
             </div>
-            {error.phonNumber && <span className="register-error" style={{ color: "red" }}>{error.phonNumber}</span>}
+            {error.phoneNumber && <span className="register-error" style={{ color: "red" }}>{error.phoneNumber}</span>}
             {error.BackupPhoneNumber && <span className="register-error" style={{ color: "red" }}>{error.BackupPhoneNumber}</span>}
 
             <div className="register-input-8">

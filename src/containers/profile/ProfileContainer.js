@@ -41,10 +41,6 @@ const ProfileContainer = () => {
     const handleAll = async (e) => {
         try {
             e.preventDefault();
-            setAll(true);
-            setTransit(false);
-            setSuccessful(false);
-            setCancel(false);
             const res = await axios.get(`/orders/user/${'all'}`);
             setUserOrderList(res.data.orderTmp);
             if (res.data.orderTmp && res.data.orderTmp.length > 0) {
@@ -55,17 +51,17 @@ const ProfileContainer = () => {
                 };
                 // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
-            }
+            };
+            setAll(true);
+            setTransit(false);
+            setSuccessful(false);
+            setCancel(false);
         } catch (err) { }
     }
 
     const handleTransit = async (e) => {
         try {
             e.preventDefault();
-            setAll(false);
-            setTransit(true);
-            setSuccessful(false);
-            setCancel(false);
             const res = await axios.get(`/orders/user/${'transit'}`);
             setUserOrderList(res.data.orderTmp);
             if (res.data.orderTmp && res.data.orderTmp.length > 0) {
@@ -77,16 +73,16 @@ const ProfileContainer = () => {
                 // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
             }
+            setAll(false);
+            setTransit(true);
+            setSuccessful(false);
+            setCancel(false);
         } catch (err) { }
     }
 
     const handleSuccessful = async (e) => {
         try {
             e.preventDefault();
-            setAll(false);
-            setTransit(false);
-            setSuccessful(true);
-            setCancel(false);
             const res = await axios.get(`/orders/user/${'successful'}`);
             setUserOrderList(res.data.orderTmp);
             if (res.data.orderTmp && res.data.orderTmp.length > 0) {
@@ -97,17 +93,17 @@ const ProfileContainer = () => {
                 };
                 // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
-            }
+            };
+            setAll(false);
+            setTransit(false);
+            setSuccessful(true);
+            setCancel(false);
         } catch (err) { }
     }
 
     const handleCancel = async (e) => {
         try {
             e.preventDefault();
-            setAll(false);
-            setTransit(false);
-            setSuccessful(false);
-            setCancel(true);
             const res = await axios.get(`/orders/user/${'cancel'}`);
             setUserOrderList(res.data.orderTmp);
             if (res.data.orderTmp && res.data.orderTmp.length > 0) {
@@ -118,7 +114,11 @@ const ProfileContainer = () => {
                 };
                 // console.log("list", pageNumberTmp);
                 setPageNumber(pageNumberTmp);
-            }
+            };
+            setAll(false);
+            setTransit(false);
+            setSuccessful(false);
+            setCancel(true);
         } catch (err) { }
     };
 

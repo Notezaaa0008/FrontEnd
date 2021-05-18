@@ -64,6 +64,7 @@ function App() {
           <Switch>
             {isAuthenticated && privateRoutes.map((el, index) => <Route key={index} exact path={el.path} component={el.component} />)}
             {!isAuthenticated && publicRoutes.map((el, index) => <Route key={index} exact path={el.path} component={el.component} />)}
+            <Redirect to="/" />
           </Switch>
         </div>
         <FooterContainer />
